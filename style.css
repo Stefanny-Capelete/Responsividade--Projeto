@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header {
+    background-color: #02A28F;
+    padding: 0.813rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    width: 100%;
+    max-width: 1024px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 0.813rem;
+    max-width: 1024px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#destaques-container {
+    height: 24.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    background: url(./assets/banner-city.png) no-repeat;
+    background-size: cover;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.destaques-item {
+    padding: 1.5rem;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.destaques-item   .Categoria {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.destaques-item   .Titulo-post {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.destaques-item   .nome-autor {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.titulos-principais {
+    background-color: #02A28F;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.titulos-principais a {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+#Posts-recentes .titulos-principais {
+    padding: 1rem 1.5rem;
+    margin: 0 0 0.75rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#recente-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.Posts-recentes {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.Posts-recentes img {
+    width: 100%;
+    display: flex;
+    border-radius: 1rem 1rem 0 0;
+    height: 12rem;
+}
+
+.Posts-recentes .post-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.Posts-recentes .Categoria {
+    color: #02A28F;
+}
+
+.Posts-recentes .Titulo-post {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.Posts-recentes .Data {
+    color: #616161;
+}
+
+#popular-container .titulos-principais {
+    margin: 0 0 1.25rem;
+}
+
+#popular-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.popular-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    padding: 0.8rem;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    align-items: flex-start;
+}
+
+.popular-item img {
+    max-width: 50%;
+    display: flex;
+    border-radius: 1rem;
+    
+}
+
+.popular-item .popular-titulo {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem;
+}
+
+.popular-item .popular-data {
+    font-size: 0.9rem;
+    color: #616161;
+}
+
+#categorias-container .titulos-principais {
+    margin: 0 0 0.9rem;
+}
+
+.categorias-lista {
+    padding: 0;
+}
+
+.categorias-lista li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #616161;
+}
+
+.categorias-lista li a {
+    color: #616161;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #02A28F;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        min-width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.8rem;
+    }
+    .destaques-item   .popular-titulo {
+        font-size: 1.5rem;
+    }
+    #recente-lista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #recente-container .titulos-principais {
+        padding: 0.5rem 1rem;
+        margin: 0 0 0.75rem;
+    }
+
+    #popular-container .titulos-principais,
+    #categorias-container .titulos-principais {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
